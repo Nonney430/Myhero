@@ -67,12 +67,12 @@ class _HomePageState extends State<HomePage> {
                   ),
                   SizedBox(height: 8.0),
                   Text(
-                    'Promlert Lovichit',
+                    'Thanakorn Khoseklang',
                     style: TextStyle(fontSize: 20.0, color: Colors.white),
                   ),
                   SizedBox(height: 4.0),
                   Text(
-                    'promlert@gmail.com',
+                    'nontanagon@gmail.com',
                     style: TextStyle(
                         fontSize: 14.0, color: Colors.white.withOpacity(0.6)),
                   ),

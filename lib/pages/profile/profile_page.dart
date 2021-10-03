@@ -28,10 +28,10 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 24.0),
-          Text('Promlert Lovichit',
+          Text('Thanakorn Khoseklang',
               style: Theme.of(context).textTheme.headline1),
           SizedBox(height: 8.0),
-          Text('promlert@gmail.com', style: TextStyle(fontSize: 20.0)),
+          Text('nontanagon@gmail.com', style: TextStyle(fontSize: 20.0)),
         ],
       ),
     );

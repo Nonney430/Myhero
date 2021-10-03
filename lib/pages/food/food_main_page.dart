@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'food_list_page.dart';
+
 class FoodMainPage extends StatefulWidget {
   const FoodMainPage({Key? key}) : super(key: key);
 
@@ -32,12 +34,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
         },
       ),
       body: _selectedBottomNavIndex == 0
-          ? Container(
-              child: Center(
-                child: Text('FOOD MENU',
-                    style: Theme.of(context).textTheme.headline1),
-              ),
-            )
+          ? FoodListPage()
           : Container(
               child: Center(
                 child: Text('YOUR ORDER',
