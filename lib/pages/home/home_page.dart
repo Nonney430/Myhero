@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_food/helpers/platform_aware_asset_image.dart';
-import 'package:flutter_food/pages/food/food_main_page.dart';
-import 'package:flutter_food/pages/profile/profile_page.dart';
+import 'package:flutter_food/pages/hero/hero_main_page.dart';
 
 class HomePage extends StatefulWidget {
   static const routeName = '/home';
@@ -18,16 +17,14 @@ class _HomePageState extends State<HomePage> {
   var _selectedDrawerItemIndex = 0;
 
   final _pageDataList = [
+
     {
-      'icon': Icons.fastfood,
-      'title': 'Food',
-      'page': FoodMainPage(),
+      'icon': Icons.person_sharp,
+      'title': 'Character',
+      'page': HeroMainPage(),
     },
-    {
-      'icon': Icons.person,
-      'title': 'Profile',
-      'page': ProfilePage(),
-    },
+
+
   ];
 
   @override
@@ -35,6 +32,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_pageDataList[_selectedDrawerItemIndex]['title'] as String),
+        // actions: [
+        //   IconButton(onPressed: () {}, icon: )
+        // ],
       ),
       drawer: Drawer(
         child: ListView(
@@ -56,25 +56,25 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(40.0),
+                    // borderRadius: BorderRadius.circular(40.0),
                     child: Container(
                       width: 80.0,
                       height: 80.0,
                       child: PlatformAwareAssetImage(
-                        assetPath: 'assets/images/profile.png',
+                        assetPath: 'assets/images/my-hero.png',
                       ),
                     )
                   ),
                   SizedBox(height: 8.0),
                   Text(
-                    'Thanakorn Khoseklang',
-                    style: TextStyle(fontSize: 20.0, color: Colors.white),
+                    'My Hero Academia',
+                    style: TextStyle(fontSize: 20.0),
                   ),
                   SizedBox(height: 4.0),
                   Text(
-                    'nontanagon@gmail.com',
+                    'Boku no Hero Academia',
                     style: TextStyle(
-                        fontSize: 14.0, color: Colors.white.withOpacity(0.6)),
+                        fontSize: 14.0),
                   ),
                 ],
               ),

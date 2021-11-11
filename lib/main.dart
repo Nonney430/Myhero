@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_food/pages/food/food_detail.dart';
+import 'package:flutter_food/pages/hero/hero_detail.dart';
 import 'package:flutter_food/pages/home/home_page.dart';
-import 'package:flutter_food/pages/login/login_page.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -11,30 +11,41 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'MY HERO ACADEMIA',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.yellow,
+        scaffoldBackgroundColor: Colors.black,
+        canvasColor: Colors.black,
         textTheme: const TextTheme(
           headline1: TextStyle(
-            fontSize: 30.0,
+            fontSize: 21.0,
             fontWeight: FontWeight.bold,
+            color: Colors.black,
+
           ),
           headline6: TextStyle(
-            fontSize: 30.0,
+            fontSize: 21.0,
             fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+          headline2: TextStyle(
+            fontSize: 21.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.yellowAccent,
           ),
           bodyText2: TextStyle(
-            fontSize: 14.0,
+            fontSize: 18.0,
+
           ),
+
         ),
       ),
       //home: LoginPage(),
       routes: {
-        LoginPage.routeName: (context) => const LoginPage(),
         HomePage.routeName: (context) => const HomePage(),
-        FoodDetail.routeName: (context) => const FoodDetail(),
+        HeroDetail.routeName: (context) => const HeroDetail(),
       },
-      initialRoute: LoginPage.routeName,
+      initialRoute: HomePage.routeName,
     );
   }
 }

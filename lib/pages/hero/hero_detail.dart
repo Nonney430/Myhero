@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_food/models/hero_item.dart';
 
-class FoodDetail extends StatelessWidget {
-  const FoodDetail({Key? key}) : super(key: key);
+class HeroDetail extends StatelessWidget {
+  const HeroDetail({Key? key}) : super(key: key);
   static const routeName = '/food_details_page';
 
   @override

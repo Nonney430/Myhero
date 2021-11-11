@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food/models/hero_item.dart';
-import 'package:flutter_food/pages/food/hero_detail.dart';
+import 'package:flutter_food/pages/hero/hero_detail.dart';
 import 'package:flutter_food/services/api.dart';
 import 'package:http/http.dart' as http;
 
@@ -48,8 +48,6 @@ class _HeroListPageState extends State<HeroListPage> {
     HeroItem(id: 30, name: "Mirio Togata", alias: "Lemillion", affiliation: "U.A. High School", bloodtype: "O", gender: "Male", occupation: "Student", quirk: "Permeation, Quirkless", image: "30.jpg"),
     HeroItem(id: 31, name: "Nejire Hado", alias: "Nejire Chan", affiliation: "U.A. High School", bloodtype: "B", gender: "Female", occupation: "Student", quirk: "Wave Motion", image: "31.jpg"),
     HeroItem(id: 32, name: "Tamaki Amajiki", alias: "Suneater", affiliation: "U.A. High School", bloodtype: "AB", gender: "Male", occupation: "Student", quirk: "Manifest", image: "32.jpg"),
-
-
   ];
 
   @override
@@ -67,7 +65,7 @@ class _HeroListPageState extends State<HeroListPage> {
                 print(item);
                 Navigator.pushNamed(
                   context,
-                  FoodDetail.routeName,
+                  HeroDetail.routeName,
                 arguments: item,
                 );
 
