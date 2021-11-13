@@ -4,7 +4,7 @@ import 'package:flutter_food/models/hero_item.dart';
 
 class HeroDetail extends StatelessWidget {
   const HeroDetail({Key? key}) : super(key: key);
-  static const routeName = '/food_details_page';
+  static const routeName = '/hero_details_page';
 
   @override
   Widget build(BuildContext context) {
