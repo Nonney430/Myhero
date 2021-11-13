@@ -54927,7 +54927,7 @@ O(a,b){var s=null
 return new U.n1(M.ab1(s,s,new D.nw("assets/"+this.c,1)),s,s,s,s)}}
 F.By.prototype={
 O(a,b){var s=X.abr(null,C.m,C.Do,C.m,C.IM)
-return new S.rY(P.aQ(["/home",new F.SB(),"/food_details_page",new F.SC()],t.N,t.hw),"/home","MY HERO ACADEMIA",s,null)}}
+return new S.rY(P.aQ(["/home",new F.SB(),"/hero_details_page",new F.SC()],t.N,t.hw),"/home","MY HERO ACADEMIA",s,null)}}
 F.SB.prototype={
 $1(a){return C.zs},
 $S:332}
@@ -54952,7 +54952,7 @@ $S:334}
 K.a_Y.prototype={
 $0(){var s=this.a
 P.xW(s)
-K.BG(this.b).HP("/food_details_page",s,t.X)},
+K.BG(this.b).HP("/hero_details_page",s,t.X)},
 $S:0}
 R.rj.prototype={
 aL(){return new R.H0(C.n)}}
